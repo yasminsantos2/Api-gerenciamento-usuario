@@ -1,0 +1,19 @@
+# Web framework
+fastapi==0.115.6
+
+# ASGI server
+uvicorn[standard]==0.34.0
+
+# ORM (SQLAlchemy 2.x)
+SQLAlchemy==2.0.36
+
+# Data validation (Pydantic v2)
+pydantic==2.10.4
+pydantic-settings==2.7.1
+
+# Email validation (used by Pydantic EmailStr)
+email-validator==2.2.0
+
+# Password hashing
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
