@@ -19,3 +19,11 @@ def get_db():
         yield db
     finally:
         db.close()
+
+
+def init_db():
+    # Importa as entidades para que sejam registradas na metadata da Base
+    # antes da criação das tabelas.
+    from entities.user import User  # noqa: F401
+
+    Base.metadata.create_all(bind=engine)
